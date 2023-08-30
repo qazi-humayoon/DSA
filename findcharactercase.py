@@ -6,9 +6,7 @@
 #     else:
 #         print("-1")
 
-
 # a = funcc(input("enter the alphaber :"))
-
 
 a = input("")
 if a.isupper():
