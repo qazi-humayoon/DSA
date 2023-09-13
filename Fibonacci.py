@@ -26,6 +26,6 @@ print(f)
 #     c = a + b
 #     a = b
 #     b = c
-#     print(b)
+#     print(b,end=" ")
 
 
