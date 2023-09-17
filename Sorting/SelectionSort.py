@@ -1,3 +1,4 @@
+#Time Complexity is O(N^2) For Best,Worst and Average.
 a = [13,46,24,52,20,9]
 n = 6
 for i in range(n - 1): # taking n - 1 because the last element will always be sorted at the end of the program.then we will be comparing n = 52 with whole list which is simply waste

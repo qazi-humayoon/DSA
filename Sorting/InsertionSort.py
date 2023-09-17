@@ -1,3 +1,5 @@
+#Time Complexity is O(N^2) for worst and average case
+#For the best case the time complexity can be O(N) i.e if the array is already sorted and while loop won't run.
 n = 6
 a = [3,4,5,99,33,11]
 for i in range(n):
