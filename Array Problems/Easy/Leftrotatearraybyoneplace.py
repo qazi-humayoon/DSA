@@ -10,4 +10,4 @@ print(a)
 # a[n - 1] = a[0]
 # a[:-1] = temp
 
-# Time Complexity is O(N) with Space Complexity is O(1)
+# Time Complexity is O(N) with Space Complexity is O(n)

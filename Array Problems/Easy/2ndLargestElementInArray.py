@@ -11,7 +11,7 @@
 #         break
 # print(slarge)
 
-# Time Complexity : Sort = O(NlogN) + for loop (Worst Case) = O(N) = O(NlogN + N)
+# Time Complexity : Sort = O(NlogN) + for loop (Worst Case) = O(N) => O(NlogN + N)
 
 #Better Solution
 # a = [1,2,4,7,7,5]

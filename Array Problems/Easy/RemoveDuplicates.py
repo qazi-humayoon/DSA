@@ -13,22 +13,23 @@
 # print(b)
 
 
-arr = [1,2,2,3,4,5,5,6,7]
-n = len(arr)
-j = 1
-for i in range(1,n):
-    if arr[i] != arr[i - 1]:
-        arr[j] = arr[i]
-        j += 1
-print(j)
+# arr = [1,2,2,3,4,5,5,6,7]
+# n = len(arr)
+# j = 1
+# for i in range(1,n):
+#     if arr[i] != arr[i - 1]:
+#         arr[j] = arr[i]
+#         j += 1
+# print(j)
 
 #Time Complexity O(N)
 
-#same as earlier approach but the other way
+#same as earlier approach but the other way (Striver)
 # i = 0
 # for j in range(1,len(nums)):
 #     if nums[j] != nums[i]:
 #         nums[i + 1] = nums[j]
 #         i += 1
-# return i + 1  we have to use i + 1 because the index starts from 0 and we have to return the length of the list. so i + 1
+# return i + 1  
+# we have to use i + 1 because the index starts from 0 and we have to return the length of the list. so i + 1
 
