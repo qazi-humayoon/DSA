@@ -7,6 +7,7 @@
 # return max(a)
 # Can be done also using the return max function in python
 
+# ____________________________________________________________________________________________________
 
 #This is the optimal solution for this problem
 a = [4, 7, 8, 6, 7, 6 ]

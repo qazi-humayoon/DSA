@@ -1,4 +1,4 @@
-#Brute Force time complexity O(n) + (n-x) space complexity = O(N)
+#Brute Force time complexity O(n) + O(x) + (n-x) space complexity = O(2N)
 arr = [1, 0, 2, 3, 2, 0, 0, 4, 5, 1]
 n = len(arr)
 # temp = []
@@ -11,6 +11,7 @@ n = len(arr)
 # for i in range(m,n):
 #     arr[i] = 0
 # print(arr)
+# ____________________________________________________________________________________________________
 
 #Optimal Approach time complexity O(n) space complexity = O(1)
 j = - 1
