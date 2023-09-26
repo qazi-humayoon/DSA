@@ -90,7 +90,7 @@ def find_union(arr1,arr2):
 
 
 
-arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-arr2 = [2, 3, 4, 4, 5, 11, 12]
+arr1 = [12,42]
+arr2 = [3 ,4 ,5, 28, 37, 42, 43, 46]
 union = find_union(arr1,arr2)
 print(*union)
