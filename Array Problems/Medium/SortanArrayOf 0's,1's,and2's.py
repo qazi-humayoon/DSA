@@ -60,6 +60,7 @@
 #Better solution
 #Time Complexity :- O(2*N)
 #Space Complexity :- O(1)
+
 # arr = [2,2,2,2,0,0,1,0]
 # n = len(arr)
 # count0 = 0

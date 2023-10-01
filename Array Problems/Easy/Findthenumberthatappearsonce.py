@@ -9,16 +9,16 @@
 #         print(num)
 
 # using hash map
-# a = [8,8,9,9,10]
-# n = len(a)
-# maxi = max(a)
-# hash = [0] *(maxi+1)
-# for i in a:
-#     hash[i] += 1
+a = [8,8,9,9,10]
+n = len(a)
+maxi = max(a)
+hash = [0] *(maxi+1)
+for i in a:
+    hash[i] += 1
 
-# for i in a:
-#     if hash[i] == 1:
-#         print(i)
+for i in a:
+    if hash[i] == 1:
+        print(i)
 
 #hashing using map data strucutre
 # a = [8,8,9,9,10]
@@ -32,9 +32,9 @@
 
 #using the xor operation
 
-a = [8,8,9,9,10]
-n = len(a)
-xor1 = 0
-for i in range(len(a)):
-    xor1 = xor1 ^ a[i]
-print(xor1)
+# a = [8,8,9,9,10]
+# n = len(a)
+# xor1 = 0
+# for i in range(len(a)):
+#     xor1 = xor1 ^ a[i]
+# print(xor1)
