@@ -1,3 +1,7 @@
+#MergeSort 
+#Time Complexity O(NLogN) : At each step, we divide the whole array, for that logn 
+#Space Complexity O(N)
+
 def merge(arr, low, mid, high):
     temp = []  # Temporary list to store merged values
     left = low  # Starting index of left half of arr
@@ -51,6 +55,7 @@ if __name__ == "__main__":
         print(arr[i], end=" ")
     print()
 
+#____________________________________________________________________________________________________________
 
 # One Way to implement the Merge Sort Algorithm
 # def merge_sort(array):
