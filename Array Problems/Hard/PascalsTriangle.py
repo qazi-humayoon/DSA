@@ -70,7 +70,7 @@ def nCr(n, r):
         res = res // (i + 1)
     return int(res)
 
-def pascalTriangle(n : int) -> List[List[int]]:
+def pascalTriangle(n):
     ans = []
 
     #Store the entire pascal's triangle:
