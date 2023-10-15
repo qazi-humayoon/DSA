@@ -107,13 +107,12 @@ print("The longest subarray with sum k is :-",res)
 
 #         # Move forward the right pointer:
 #         right += 1
-#         if right < n: Sum += a[right]
+#         if right < n: 
+#              Sum += a[right]
 
 #     return maxLen
      
      
-
-
 # a = [6,2,3,1,1,1,1,3,3]
 # k = 6
 # length = longest(a,k)
