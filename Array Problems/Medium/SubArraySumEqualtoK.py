@@ -23,6 +23,8 @@
 #                 count += 1
 # print(count)
 
+#_________________________________________________________________________________________________________________________________
+
 def find_all_subarrays_with_given_sum(arr, k):
     n = len(arr)  # size of the given array
     mpp = {}
@@ -49,4 +51,4 @@ if __name__ == "__main__":
     arr = [1,1,1]
     k = 2
     cnt = find_all_subarrays_with_given_sum(arr, k)
-    print("The number of subarrays is:", cnt)
+    print("The number of subarrays is:",cnt)

@@ -26,7 +26,7 @@
 #     # return ans
 
 
-# if __name__ == "__main__":
+
 #     arr = [-1, 0, 1, 2, -1, -4]
 #     n = len(arr)    #Not necessary to use all this it's just for printing
 #     ans = triplet(n, arr)
