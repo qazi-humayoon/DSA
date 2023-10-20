@@ -43,14 +43,35 @@
 #     print()
 
   
-a = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+# a = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+# n = len(a)
+# for i in range(n):
+#     for j in range(i):
+#         a[i][j],a[j][i] = a[j][i],a[i][j]
+# for i in range(n):
+#     a[i].reverse()
+# for i in range(n):
+#     for j in range(len(a[0])):
+#         print(a[i][j],end=" ")
+#     print()
+a = [1,2,3,2]
 n = len(a)
-for i in range(n):
-    for j in range(i):
-        a[i][j],a[j][i] = a[j][i],a[i][j]
-for i in range(n):
-    a[i].reverse()
-for i in range(n):
-    for j in range(len(a[0])):
-        print(a[i][j],end=" ")
-    print()
+# hash = [0] * (n + 1)
+# for i in a:
+#     hash[i] += 1
+# for i in a:
+#     if hash[i] == 2:
+#         print(i)
+# dict = {}
+# for i in a:
+#     dict[i] = dict.get(i,0) + 1
+# for i,count in dict.items():
+#     if count == 2:
+#         print(i)
+
+hash = [0] * (n + 1)
+for i in a:
+    hash[i] += 1
+for i in range(1,n+1):
+    if hash[i] == 0:
+        print(i)

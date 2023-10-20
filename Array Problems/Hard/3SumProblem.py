@@ -25,8 +25,6 @@
 #     # ans = [list(item) for item in st]
 #     # return ans
 
-
-
 #     arr = [-1, 0, 1, 2, -1, -4]
 #     n = len(arr)    #Not necessary to use all this it's just for printing
 #     ans = triplet(n, arr)
@@ -127,4 +125,5 @@ for it in ans:
         print(i, end=" ")
     print("]", end=" ")
 print()
+
 
