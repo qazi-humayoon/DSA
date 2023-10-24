@@ -73,8 +73,7 @@ def subarrayWithXork(a,k):
         mpp[xr] = mpp.get(xr,0) + 1
     return cnt
 
-a = [4,2,2,6,4]
-k = 6
+a = [4, 94, 39, 36, 88, 87, 39 ,67 ,11 ,6]
+k = 15
 ans = subarrayWithXork(a,k)
-(a,k)
 print("The number of subarray with XOR k is: ",ans)

@@ -6,5 +6,3 @@ def rev(arr,start,end):
 arr = [4,3,2,1]
 rev(arr,0,len(arr)-1)
 print("The reversed array is :-",arr)
-
-

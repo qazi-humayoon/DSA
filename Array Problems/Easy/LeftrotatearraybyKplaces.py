@@ -32,14 +32,14 @@ def reverse(l,r):
         l += 1
         r -= 1 
 #Right Rotate
-reverse(0,n-1)
-reverse(0,k-1)
-reverse(k,n-1)
+# reverse(0,n-1)
+# reverse(0,k-1)
+# reverse(k,n-1)
 
 #Left Rotate
 
-# reverse(0,k-1)
-# reverse(k,n-1)
-# reverse(0,n-1)	
+reverse(0,k-1)
+reverse(k,n-1)
+reverse(0,n-1)	
 print(nums) 
 

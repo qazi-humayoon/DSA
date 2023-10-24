@@ -32,31 +32,31 @@
 #Better
 #Tc :- O(2N)
 #sc :-O(N)
-def misrep(a):
-    n = len(a) # size of the array
-    hash = [0] * (n + 1) # hash array
+# def misrep(a):
+#     n = len(a) # size of the array
+#     hash = [0] * (n + 1) # hash array
 
-    #update the hash array:
-    for i in range(n):
-        hash[a[i]] += 1
+#     #update the hash array:
+#     for i in range(n):
+#         hash[a[i]] += 1
 
-    #Find the repeating and missing number:
-    repeating, missing = -1, -1
-    for i in range(1, n + 1):
-        if hash[i] == 2:
-            repeating = i
-        elif hash[i] == 0:
-            missing = i
+#     #Find the repeating and missing number:
+#     repeating, missing = -1, -1
+#     for i in range(1, n + 1):
+#         if hash[i] == 2:
+#             repeating = i
+#         elif hash[i] == 0:
+#             missing = i
 
-        if repeating != -1 and missing != -1:
-            break
-    return [repeating, missing]
+#         if repeating != -1 and missing != -1:
+#             break
+#     return [repeating, missing]
 
     
 
-a = [3, 1, 2, 5, 4, 6, 7, 5]
-res = misrep(a)
-print(res)
+# a = [3, 1, 2, 5, 4, 6, 7, 5]
+# res = misrep(a)
+# print(res)
 
 #__________- --------- _________________________- -------------------_____________________-----------------_______________________
 
