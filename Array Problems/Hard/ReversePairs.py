@@ -54,24 +54,24 @@ def merge(a, low, mid, high):
     for i in range(low, high + 1):
         a[i] = temp[i - low]
 
-def countPairs(arr, low, mid, high):
+def countPairs(a, low, mid, high):
     right = mid + 1
     cnt = 0
     for i in range(low, mid + 1):
-        while right <= high and arr[i] > 2 * arr[right]:
+        while right <= high and a[i] > 2 * a[right]:
             right += 1
         cnt += (right - (mid + 1))
     return cnt
 
-def mergeSort(arr, low, high):
+def mergeSort(a, low, high):
     cnt = 0
     if low >= high:
         return cnt
     mid = (low + high) // 2
-    cnt += mergeSort(arr, low, mid)  # left half
-    cnt += mergeSort(arr, mid + 1, high)  # right half
-    cnt += countPairs(arr, low, mid, high)  # Modification
-    merge(arr, low, mid, high)  # merging sorted halves
+    cnt += mergeSort(a, low, mid)  # left half
+    cnt += mergeSort(a, mid + 1, high)  # right half
+    cnt += countPairs(a, low, mid, high)  # Modification
+    merge(a, low, mid, high)  # merging sorted halves
     return cnt
 
 def team(a,n):
