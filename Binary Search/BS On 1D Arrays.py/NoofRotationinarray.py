@@ -1,4 +1,5 @@
-import sys
+#Brute Force
+
 def findKRotation(arr : [int]) -> int:
     n = len(arr)  # Size of array
     ans = float('inf')
@@ -9,14 +10,11 @@ def findKRotation(arr : [int]) -> int:
             index = i
     return index
 
-if __name__ == "__main__":
-    arr = [4, 5, 6, 7, 0, 1, 2, 3]
-    ans = findKRotation(arr)
-    print("The array is rotated", ans, "times.")
+arr = [4, 5, 6, 7, 0, 1, 2, 3]
+ans = findKRotation(arr)
+print("The array is rotated", ans, "times.")
 
-
-
-#______________________________________________________________________________
+#______________________________________________________________________________--------------------------------------
 
 #Optimal
 
@@ -33,7 +31,7 @@ def findKRotation(arr):
         # the minimum in that search space
         if arr[low] <= arr[high]:
             if arr[low] < ans:
-                index = low
+                index = low   #This step saves times and make code more optimize
                 ans = arr[low]
             break
 
