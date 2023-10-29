@@ -1,3 +1,18 @@
+#Brute force
+def count(arr: [int], n: int, x: int) -> int:
+    cnt = 0
+    for i in range(n):
+        if arr[i] == x:
+            cnt += 1
+    return cnt
+
+arr = [2, 4, 6, 8, 8, 8, 11, 13]
+n = 8
+x = 8
+ans = count(arr, n, x)
+print("The number of occurrences is:", ans)
+
+#_________________________________________________________________________________________________________________________
 
 #In this code we get the first and last occurance and then subtract last from first + 1 which gives us total occurence
 def firstOccurrence(arr, n, k):
