@@ -80,7 +80,7 @@ def firstoccurance(arr,k):
     while low <= high:
         mid = (low + high) // 2
         if arr[mid] == k:
-            first = mid+jf
+            first = mid
             high = mid - 1
         elif arr[mid] > k:
             high = mid - 1
