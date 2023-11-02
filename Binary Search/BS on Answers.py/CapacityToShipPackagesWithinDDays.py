@@ -26,7 +26,8 @@ def leastWeightCapacity(weights,d):
     summation = sum(weights)
 
     for i in range(maxi, summation + 1):
-        if findDays(weights, i) <= d:
+        reqdays = findDays(weights,i)
+        if reqdays <= d:
             return i
 
     # dummy return statement
