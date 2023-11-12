@@ -2,11 +2,11 @@
 
 # Data Structures and Algorithms
 
-This repository contains a collection of implementations and examples of various data structures and algorithms in different programming languages. It’s intended to serve as a reference and learning resource for anyone interested in understanding these fundamental concepts in computer science.
+This repository contains a collection of implementations and examples of various data structures and algorithms in python programming language. It’s intended to serve as a reference and learning resource for anyone interested in understanding these fundamental concepts in computer science.
 
 ## Introduction
 
-This repository is a compilation of commonly used data structures and algorithms, implemented in multiple programming languages. The purpose is to provide clear, well-commented code for educational and reference purposes. Whether you’re a beginner or an experienced developer, this repository can serve as a helpful resource for understanding and implementing these foundational concepts.
+This repository is a compilation of commonly used data structures and algorithms, implemented in python programming language. The purpose is to provide clear, well-commented code for educational and reference purposes. Whether you’re a beginner or an experienced developer, this repository can serve as a helpful resource for understanding and implementing these foundational concepts.
 
 ## GitClone
 ```
