@@ -8,6 +8,12 @@ This repository contains a collection of implementations and examples of various
 
 This repository is a compilation of commonly used data structures and algorithms, implemented in multiple programming languages. The purpose is to provide clear, well-commented code for educational and reference purposes. Whether you’re a beginner or an experienced developer, this repository can serve as a helpful resource for understanding and implementing these foundational concepts.
 
+## GitClone
+```
+https://github.com/qazi-humayoon/DSA.git
+
+```
+
 ## Language Used
 
 The implementations are available in the following language:
@@ -36,7 +42,6 @@ The content includes:
 - Tries
 - Strings
 
-## GitClone
 
 ### Prerequisites
 - Ensure you have the necessary compilers/interpreters for the specific language installed.
