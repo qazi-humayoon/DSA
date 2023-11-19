@@ -1,18 +1,18 @@
-# def checking(s,t):
-#     map1 = []
-#     map2 = []
-#     for idx in s:
-#         map1.append(s.index(idx))
-#     for idx in t:
-#         map2.append(t.index(idx))
-#     if map1 == map2:
-#         return True
-#     return False
+def checking(s,t):
+    map1 = []
+    map2 = []
+    for idx in s:
+        map1.append(s.index(idx))
+    for idx in t:
+        map2.append(t.index(idx))
+    if map1 == map2:
+        return True
+    return False
 
-# s = "egg"
-# t = "add"
-# res = checking(s,t)
-# print(res)
+s = "egg"
+t = "add"
+res = checking(s,t)
+print(res)
 
 #_____________________________________________________________________________________________________
 
