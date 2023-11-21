@@ -125,12 +125,33 @@ class LinkedList:
         if self.head is None:
             print("LL is empty")
         elif self.head.ref is None: #checking if it has only 1 node that has none then delete that and make head none
-            self.head = None
+            self.head = None #Self.head.ref gives us the reference which is present in the first node
         else: 
             n = self.head
             while n.ref.ref is not None: #here we search for the ref ref ie from one node ref to other node
-                n = n.ref
+                n = n.ref #Self.ref.ref gives use the ref of the other node
             n.ref = None
+
+                #Deleting the Node at any place in the Linked List
+    def delete_by_value(self,x):
+        if self.head is None: #Checking if the linked list is empty or not if it is then print it is empty and return it
+            print("Linked List is empty cant delete")
+            return
+        if x == self.head.data:  #Checking if the x is first node if that is the case then we simply change the ref of head to the 2nd node using n.head.ref and return
+            self.head = self.head.ref
+            return
+        n = self.head
+        while n is not None: #Checking the previous node which comes just before that node which is to be deleted
+            if x == n.ref.data: #Checking is the x is equal to the node which is to be deleted n.ref.data tells if the next node is equal to x or not if it is then we break
+                break
+            n = n.ref #It is used to move forward in the linked list as it contains the ref of the other nodes
+        if n.ref is None:  #If n.ref is still none that means the node is not present in the linked list
+            print("Node isnt present")
+        else:
+            n.ref = n.ref.ref #if the node is present in the linked list then we change the ref of the linked list with the ref of the node which the node to be deleted contains
+
+
+    
 
 
 LL1 = LinkedList()
@@ -140,7 +161,8 @@ LL1.add_begin(10)
 # LL1.add_after(700,600)   #we are adding 700 after 600
 LL1.add_begin(15)
 LL1.add_begin(19)
-LL1.delete_end()  #Delete the node at the last
+# LL1.delete_end()  #Delete the node at the last
+LL1.delete_by_value(15) #Deleting the node at any place in linked list
 # LL1.insert_empty(10) #Note :- Here insert_empty won't add 10 because there are already nodes present in the linked list
 # LL1.delete_begin()   #here it should be used at last if used earlier and adding after that it will show not empty. here we are deleting at the beginning
 LL1.print_LL()         #printing the whole linked list     
