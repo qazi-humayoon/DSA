@@ -31,7 +31,7 @@
 
 #______________________________________________________________________________________________________________
 
-
+#Moorie Voting Algorithm
 
 # def majorityElement(arr):
 #     # Size of the given array
