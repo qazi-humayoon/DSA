@@ -61,9 +61,54 @@ class doublyLL:
                 n.nref = new_node       # Storing the ref of new_node in the next ref of the previous node
                 new_node.pref = n       # Storing the ref of the prev node in the new_node previous reference
 
+    def add_after(self,data,x):
+        if self.head is None:
+            print("DLL is empty")
+        else:
+            n = self.head
+            while n is not None:
+                if x == n.data:
+                    break
+                n = n.nref
+            if n is None:
+                print("Node is not present in the Linked List")
+            else:
+                new_node = Node(data)
+                new_node.nref = n.nref
+                new_node.pref = n
+                while n.nref is not None:
+                    n.nrf.pref = new_node
+                n.nref = new_node
+
+    def add_before(self,data,x):
+        if self.head is None:
+            print("LL is empty")
+        else:
+            n = self.head
+            while n is not None:
+                if x == n.data:
+                    break
+                n = n.nref
+            if n is None:
+                print("Node is not present in the Linked List")
+            else:
+                new_node = Node(data)
+                new_node.nref = n
+                new_node.pref = n.pref
+                if n.pref is not None:
+                    n.pref.nref = new_node
+                else:
+                    self.head = new_node
+                    n.pref = new_node
+
+            
+        
+
 dl1 = doublyLL()
 # dl1.insert_empty(10)
 dl1.add_begin(10)
+dl1.add_after(40,10)
+dl1.add_before(60,40)
 dl1.add_end(30)
 dl1.print_LL()
-dl1.print_LL_reverse()
+# dl1.print_LL_reverse()
