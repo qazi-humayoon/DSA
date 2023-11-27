@@ -53,3 +53,52 @@
         #     n = n.next
         # return 0
 #___________________________________________________________________________
+
+#Introduction to DL Coding Ninjas
+
+    # n = len(arr)
+    # # 'head' variable stores the head of the
+    # # doubly linked list
+    # head = Node(arr[0])
+    # temp = head
+
+    # for i in range(1, n):
+    #     # Attach current node to the "next"
+    #     # of the previous node
+    #     curNode = Node(arr[i])
+    #     temp.next = curNode
+    #     # Attach 'temp' to the previous of 'curNode'
+    #     curNode.prev = temp
+    #     temp = temp.next
+
+    # return head
+
+#___________________________________________________________________________
+
+# Insertion at the end in DLL
+
+    # new_node = Node(k)
+    # n = head
+    # if head is None:
+    #     head = new_node
+    # else:
+    #     while n.next is not None:
+    #         n = n.next
+    #     n.next = new_node
+    #     new_node.prev = n
+    # return head
+#___________________________________________________________________________
+
+# Deletion of Last Node in DLL
+
+    # if head is None:
+    #     return 
+    # if head.next is None:
+    #     head = None
+    # else:
+    #     n = head
+    #     while n.next is not None:
+    #         n= n.next
+    #     n.prev.next = None
+    # return head
+#___________________________________________________________________________
