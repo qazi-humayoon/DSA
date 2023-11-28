@@ -75,7 +75,7 @@
 
 #___________________________________________________________________________
 
-# Insertion at the end in DLL
+# Insertion at the end in DLL Coding Ninjas
 
     # new_node = Node(k)
     # n = head
@@ -89,7 +89,7 @@
     # return head
 #___________________________________________________________________________
 
-# Deletion of Last Node in DLL
+# Deletion of Last Node in DLL Coding Ninjas
 
     # if head is None:
     #     return 
@@ -102,3 +102,24 @@
     #     n.prev.next = None
     # return head
 #___________________________________________________________________________
+
+#Reverse in a DLL Coding Ninjas
+#    if head.next is None:
+#         return head
+
+#     curr = head
+#     temp = None
+
+#     # Traverse the linked list to the end
+#     while (curr != None):
+
+#         temp = curr.prev
+#         curr.prev = curr.next
+#         curr.next = temp
+#         curr = curr.prev 
+
+#     # Update head with the previous node of temp
+#     head = temp.prev 
+
+#     # New head of the modified list is returned
+#     return head
