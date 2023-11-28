@@ -54,8 +54,8 @@ LL1.add_begin(10)
 LL1.print_l()
     
 Middle = LL1.counting()
-print("Middle Node",Middle.data)
+print("\nMiddle Node Using Turtle and Hare Approach :",Middle.data)
 
 Middle1 = LL1.counting1()
-print("Middle Node",Middle1.data)
+print("Middle Node Using Brute :",Middle1.data)
             
