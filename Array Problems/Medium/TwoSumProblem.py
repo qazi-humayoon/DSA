@@ -8,7 +8,7 @@
 #     for j in range(i + 1,len(a)):
 #         if a[i] + a[j] == target:
 #             print(i,j)
-
+ 
 #_____________________________________________________________________________________________________________________________
 
 #better force with time complexity of O(Nlogn) logn if it is ordered map. It is also optimal solution if we are returning only 
