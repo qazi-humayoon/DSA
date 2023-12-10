@@ -10,7 +10,7 @@
 # if cnt == n:
 #     newhead = head.next
 #     return newhead
-# res = cnt // 2
+# res = cnt - n
 # temp = head
 # while temp:
 #     res -= 1
