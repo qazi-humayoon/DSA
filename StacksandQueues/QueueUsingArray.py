@@ -42,49 +42,55 @@ class Queue:
     def __init__(self):
         self.start = -1
         self.end = -1
-        self.currSize = 0
-        self.maxSize = 16
-        self.arr = [0] * self.maxSize
-
-
-    def push(self, newElement):
-        if self.currSize == self.maxSize:
-            print("Queue is full\nExiting...")
-            exit(1)
+        self.currsize = 0
+        self.maxsize = 16
+        self.arr = [0] * self.maxsize
+        
+    def push(self, newelement):
+        if self.currsize == self.maxsize:
+            print("Queue is full")
+            return
         if self.end == -1:
             self.start = 0
             self.end = 0
         else:
-            self.end = (self.end + 1) % self.maxSize
-        self.arr[self.end] = newElement
-        print("The element pushed is", newElement)
-        self.currSize += 1
-
-
+            self.end = (self.end + 1) % self.maxsize
+        self.arr[self.end] = newelement
+        print("The element pushed is:", newelement)
+        self.currsize += 1
+        
     def pop(self):
         if self.start == -1:
-            print("Queue Empty\nExiting...")
+            print("Queue is empty. Cannot delete.")
+            return None
         popped = self.arr[self.start]
-        if self.currSize == 1:
+        if self.currsize == 1:
             self.start = -1
             self.end = -1
         else:
-            self.start = (self.start + 1) % self.maxSize
-        self.currSize -= 1
+            self.start = (self.start + 1) % self.maxsize
+            self.currsize -= 1
         return popped
-
-
+            
     def top(self):
         if self.start == -1:
-            print("Queue is Empty")
-            exit(1)
+            print("Queue is empty")
+            return None
         return self.arr[self.start]
-
-
+        
     def size(self):
-        return self.currSize
-
-
+        return self.currsize
+    
+    def printings(self):
+        if self.start == -1:
+            print("Queue is empty")
+            return
+        print("The elements in the queue are:")
+        i = self.start
+        while i != self.end:
+            print(self.arr[i], end=" ")
+            i = (i + 1) % self.maxsize
+        print(self.arr[self.end])  # Print the last element
 
 
 if __name__ == "__main__":
