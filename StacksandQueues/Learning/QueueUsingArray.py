@@ -99,6 +99,7 @@ if __name__ == "__main__":
     q.push(14)
     q.push(24)
     q.push(34)
+    q.printings()
     print("The peek of the queue before deleting any element", q.top())
     print("The size of the queue before deletion", q.size())
     print("The first element to be deleted", q.pop())
