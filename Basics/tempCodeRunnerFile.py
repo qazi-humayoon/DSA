@@ -1,18 +1,11 @@
-
-def f(a,n):
-    for i in range(n - 1):
-        mini = i
-        for j in range(i,n):
-        
-            if a[j] < a[mini]:
-                mini = j
-        temp = a[mini]
-        a[mini] = a[i]
-        a[i] = temp
-    return a
-    
-a = [3,2,6,3,7]
-n = 6
-res = f(a,n)
-print(res)
-
+= 1
+b = 1
+c = 0
+num = int(input())
+if num == 1 or num == 2:
+    print("1")
+for i in range(2,num):
+    c = a + b
+    a = b
+    b = c
+    print(b,end=" ")
