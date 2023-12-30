@@ -1,4 +1,4 @@
-= 1
+a = 1
 b = 1
 c = 0
 num = int(input())
