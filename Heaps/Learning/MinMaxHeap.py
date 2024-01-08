@@ -2,6 +2,19 @@
 
 # Heapify is a process used in computer science and algorithms, specifically in the context of heaps, to maintain the heap property or convert an array into a heap data structure.
 
+# ____________________________________________________________________________
+# CAN BE DONE LIKE THIS ALSO
+import heapq
+
+min_heap = []
+heapq.heappush(min_heap,90)
+heapq.heappush(min_heap,60)
+heapq.heappush(min_heap,50)
+heapq.heappush(min_heap,40)
+heapq.heappush(min_heap,35)
+print(min_heap)
+
+# ____________________________________________________________________________
 # Note
 #FOR MAX HEAP CHANGE THE SMALLEST TO LARGEST AND > TO <
 
