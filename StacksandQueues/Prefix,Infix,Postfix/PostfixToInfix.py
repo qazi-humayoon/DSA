@@ -1,4 +1,4 @@
-def prefixtoinfix(s):  
+def posttoinfix(s):  
     operands = []
 
     # Iterating from right to left.
@@ -21,5 +21,5 @@ def prefixtoinfix(s):
     return operands[-1]
 
 s = 'ab+c+'
-checking = prefixtoinfix(s)
+checking = posttoinfix(s)
 print(checking)

@@ -1,3 +1,27 @@
+#Do this way blow is another approach to do it but this is almost same for all
+
+def preToPost(s):
+    st = []
+    for i in range(len(s) - 1,-1,-1):
+        if s[i] in ["*","+","-","/"]:
+            op1 = st.pop()
+            op2 = st.pop()
+            st.append(op1+ op2 + s[i])
+
+        else:
+            st.append(s[i])
+
+    return st[-1]
+
+
+s = "-/A+BC*DE"
+checking = preToPost(s)
+print(checking)
+
+# ABC+/DE*-
+
+#_______________________________________________________________________________________________________
+
 def preToPost(s: str) -> str:
     # Initializing a stack 'st'
     st = []
@@ -41,3 +65,4 @@ def preToPost(s: str) -> str:
 s = "-/A+BC*DE"
 checking = preToPost(s)
 print(checking)
+

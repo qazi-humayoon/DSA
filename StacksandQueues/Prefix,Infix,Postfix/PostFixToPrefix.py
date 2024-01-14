@@ -1,9 +1,35 @@
+#Do this same as all the other conversions
+
+
+def posttopre(s):
+    st = []
+    for i in range(len(s)):
+        if s[i] in ["+","-","/","*"]:
+            s1 = st.pop()
+            s2 = st.pop()
+            st.append(s[i] + s1 + s2)
+
+
+
+        else:
+            st.append(s[i])
+
+    return st[-1]
+
+
+s = "abc*+"
+funct = posttopre(s)
+print(funct)
+
+# +a*bc
+
+#__________________________________________________________________________________________________________________
+
+
 def posttopre(s):
     
     st = []
-    
-
-    
+        
     # Initializing an array of operators
     o = ['+', '-', '/', '*']
     
