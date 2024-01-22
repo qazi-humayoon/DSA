@@ -6,6 +6,9 @@ class TreeNode:
 
 def isSymmetric(root):
     def isSymmetricUtil(root1, root2):
+            # If the tree is empty, it is symmetric
+        if not root:
+            return True
         # If either subtree is None, they are symmetric if both are None
         if not root1 or not root2:
             return root1 == root2
@@ -13,9 +16,7 @@ def isSymmetric(root):
         # and if the left subtree of the first is symmetric with the right subtree of the second,
         # and if the right subtree of the first is symmetric with the left subtree of the second
         return (root1.data == root2.data) and isSymmetricUtil(root1.left, root2.right) and isSymmetricUtil(root1.right, root2.left)
-    # If the tree is empty, it is symmetric
-    if not root:
-        return True
+    
     # Check if the left subtree and right subtree of the root are symmetric
     return isSymmetricUtil(root.left, root.right)
 
