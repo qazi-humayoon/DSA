@@ -19,7 +19,24 @@
 
 # # Output: NGE = [12, 20, 20, -1]
 
-#_________________________________________________________________________________________
+# #_________________________________________________________________________________________
+
+#My brute force approach
+
+# a = [7, 12, 1, 20]
+# ans = []
+# for i in range(len(a)):
+#     for j in range(i,len(a)):
+#         if a[i] < a[j]:
+#             ans.append(a[j])
+#             break
+#     else:
+#         ans.append(-1)
+
+# # ans.append(-1)
+# print(ans)
+
+# #_________________________________________________________________________________________
 
 #Coding Ninjas Optimal Solution and GFG Just loop change as compared to NGE II
 
